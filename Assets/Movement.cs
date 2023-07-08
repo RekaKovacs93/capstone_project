@@ -18,23 +18,23 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            pos.y += speed * Time.deltaTime /2;
-            pos.x += speed * Time.deltaTime;
+            pos.y += speed * Time.deltaTime;
+            //pos.x += speed * Time.deltaTime;
         }
         if (Input.GetKey("s"))
         {
-            pos.y -= speed * Time.deltaTime /2;
-            pos.x -= speed * Time.deltaTime;
+            pos.y -= speed * Time.deltaTime; 
+            //pos.x -= speed * Time.deltaTime;
         }
         if (Input.GetKey("d"))
         {
             pos.x += speed * Time.deltaTime;
-            pos.y -= speed * Time.deltaTime /2;
+            //pos.y -= speed * Time.deltaTime /2;
         }
         if (Input.GetKey("a"))
         {
             pos.x -= speed * Time.deltaTime;
-            pos.y += speed * Time.deltaTime /2;
+            //pos.y += speed * Time.deltaTime /2;
         }
         
         lightBoy.transform.position = pos;
