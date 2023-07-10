@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 275430517}
   - component: {fileID: 275430519}
   - component: {fileID: 275430518}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Area Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2682,12 +2682,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1530438566}
   - component: {fileID: 1530438572}
-  - component: {fileID: 1530438571}
   - component: {fileID: 1530438570}
   - component: {fileID: 1530438569}
-  m_Layer: 0
+  - component: {fileID: 1530438573}
+  m_Layer: 3
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2715,7 +2715,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530438565}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2742,7 +2742,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.7
 --- !u!50 &1530438570
 Rigidbody2D:
   serializedVersion: 4
@@ -2770,18 +2770,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1530438571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530438565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6596ca5445e848a1a5df9440af2d0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1530438572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2834,6 +2822,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1530438573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530438565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf294dcfe3d84f67921b511b4b11ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1109994743}
+  lightBoy: {fileID: 1530438570}
+  speed: 2
 --- !u!1 &1822867295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,9 +2942,9 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 1
+  m_GeometryType: 0
   m_GenerationType: 0
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.1
   m_ColliderPaths:
   - m_Collider: {fileID: 1822867297}
     m_ColliderPaths:
