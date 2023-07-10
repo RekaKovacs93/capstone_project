@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerMechanics : MonoBehaviour
 {
     public Tilemap tilemap;
     public Rigidbody2D lightBoy;
