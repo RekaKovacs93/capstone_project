@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollidableObject : MonoBehaviour
+
 {
+
+    public EventManager eventManager;
+
     private Collider2D z_Collider;
     [SerializeField]
     private ContactFilter2D z_Filter;
@@ -23,6 +27,7 @@ public class CollidableObject : MonoBehaviour
         foreach(var o in z_CollidedObjects)
         {
             Debug.Log("Collided with " + o.name);
+            eventManager.ResetScene();
         }
     }
 }
