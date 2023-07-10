@@ -17468,9 +17468,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1525188256}
   - component: {fileID: 1525188260}
-  - component: {fileID: 1525188259}
   - component: {fileID: 1525188258}
   - component: {fileID: 1525188257}
+  - component: {fileID: 1525188261}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -17555,21 +17555,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1525188259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525188255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b21fa86f9c2349aa9483dc5e4ec89cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  lightBoy: {fileID: 1525188258}
-  speed: 3
 --- !u!212 &1525188260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17622,6 +17607,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1525188261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525188255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf294dcfe3d84f67921b511b4b11ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 625609473}
+  lightBoy: {fileID: 1525188258}
+  speed: 2
 --- !u!1 &1633414980
 GameObject:
   m_ObjectHideFlags: 0
