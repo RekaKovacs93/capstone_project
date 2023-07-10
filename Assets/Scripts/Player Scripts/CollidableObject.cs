@@ -27,7 +27,7 @@ public class CollidableObject : MonoBehaviour
         foreach(var o in z_CollidedObjects)
         {
             Debug.Log("Collided with " + o.name);
-            eventManager.ResetScene();
+            //eventManager.ResetScene();
         }
     }
 }
