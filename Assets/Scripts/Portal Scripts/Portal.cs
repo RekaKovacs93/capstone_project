@@ -10,12 +10,17 @@ public class Portal : MonoBehaviour
 
     public bool portalOpen = false;
 
+    [SerializeReference]
+    public List<PortalTrigger> triggers;
+
     public GameObject text;
 
     private void Start()
     {
         text.SetActive(false);
-        Debug.Log("You should not see mee teehee");
+
+        
+        
 
     }
 
@@ -23,13 +28,19 @@ public class Portal : MonoBehaviour
     {
 
         if (collision.CompareTag("Player"))
-        {
+        {     
             portalOpen = true;
             text.SetActive(portalOpen);
             Debug.Log("I aM TrIGgeRed by " + collision.name + " and I am now " + portalOpen);
         }
     }
 
-    
-    
+    private void checkPortalTriggers() { 
+        foreach (PortalTrigger trigger in triggers)
+        {
+
+        }
+
+    }
+
 }
