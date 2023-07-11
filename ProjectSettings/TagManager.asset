@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Portal
+  - Text
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - Collision
   - Portal
-  - 
-  - 
+  - UIText
+  - UIBackground
   - 
   - 
   - 
@@ -51,6 +52,15 @@ TagManager:
   - name: Interactables
     uniqueID: 2483575021
     locked: 0
+  - name: Portal
+    uniqueID: 3877924839
+    locked: 0
   - name: Player
     uniqueID: 1849214679
+    locked: 0
+  - name: UI Background
+    uniqueID: 2338536431
+    locked: 0
+  - name: UI Text
+    uniqueID: 1427275521
     locked: 0
