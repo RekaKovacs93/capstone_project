@@ -18,8 +18,8 @@ public class PortalTrigger : MonoBehaviour
 
         if (collision.CompareTag("Player") && activated == false)
         {
-            portal.checkPortalTriggers();
             activated = true;
+            portal.checkPortalTriggers();
             Debug.Log("I am now active");
         }
     }

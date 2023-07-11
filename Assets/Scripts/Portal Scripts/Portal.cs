@@ -50,7 +50,7 @@ public class Portal : MonoBehaviour
         if (check)
         {
             portalOpen = true;
-
+            Debug.Log("Portal now active");
         }
         
     }
