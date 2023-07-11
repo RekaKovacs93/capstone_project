@@ -28,6 +28,8 @@ public class PlayerScript_V1 : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
+        //this will do 
+
         //cache it in a vector
         //how much value you want to apply for the movement
         Vector2 moveDelta = new Vector2(moveX, moveY);
