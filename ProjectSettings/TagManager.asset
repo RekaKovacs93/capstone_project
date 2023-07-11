@@ -46,6 +46,9 @@ TagManager:
   - name: Ground
     uniqueID: 623825937
     locked: 0
+  - name: Player
+    uniqueID: 1849214679
+    locked: 0
   - name: Walls
     uniqueID: 3208206779
     locked: 0
@@ -54,9 +57,6 @@ TagManager:
     locked: 0
   - name: Portal
     uniqueID: 3877924839
-    locked: 0
-  - name: Player
-    uniqueID: 1849214679
     locked: 0
   - name: UI Background
     uniqueID: 2338536431
