@@ -8,6 +8,9 @@ public class PlayerMechanics : MonoBehaviour
     public Tilemap tilemap;
     public Rigidbody2D lightBoy;
 
+    [SerializeField]
+    private CountDown countDown;
+
     public float speed = 10.5f;
     // Start is called before the first frame update
 
@@ -18,22 +21,30 @@ public class PlayerMechanics : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
+            
             pos.y += speed * Time.deltaTime;
+            countDown.moveDrain();
             //pos.x += speed * Time.deltaTime;
         }
         if (Input.GetKey("s"))
         {
-            pos.y -= speed * Time.deltaTime; 
+            
+            pos.y -= speed * Time.deltaTime;
+            countDown.moveDrain();
             //pos.x -= speed * Time.deltaTime;
         }
         if (Input.GetKey("d"))
         {
+            
             pos.x += speed * Time.deltaTime;
+            countDown.moveDrain();
             //pos.y -= speed * Time.deltaTime /2;
         }
         if (Input.GetKey("a"))
         {
+            
             pos.x -= speed * Time.deltaTime;
+            countDown.moveDrain();
             //pos.y += speed * Time.deltaTime /2;
         }
         
