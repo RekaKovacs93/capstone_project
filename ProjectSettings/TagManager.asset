@@ -17,7 +17,7 @@ TagManager:
   - Portal
   - UIText
   - UIBackground
-  - 
+  - Light
   - 
   - 
   - 
@@ -46,11 +46,14 @@ TagManager:
   - name: Ground
     uniqueID: 623825937
     locked: 0
+  - name: BorderTop
+    uniqueID: 3208206779
+    locked: 0
   - name: Player
     uniqueID: 1849214679
     locked: 0
-  - name: Walls
-    uniqueID: 3208206779
+  - name: BorderBottom
+    uniqueID: 1734730261
     locked: 0
   - name: Interactables
     uniqueID: 2483575021
