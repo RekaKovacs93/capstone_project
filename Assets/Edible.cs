@@ -10,12 +10,10 @@ public class Edible : MonoBehaviour
     [SerializeField]
     private PlayerMechanics playerMechanics;
 
-
-
-    
-
-
-    private bool activated = false;
+    private void Start()
+    {
+        this.gameObject.SetActive(true);
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,13 +22,10 @@ public class Edible : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerMechanics.increaseIntensity(10f);
-            //Destroy(collider2D);
+            this.gameObject.SetActive(false);
         }
     }
 
 
-    public bool getActivated()
-    {
-        return activated;
-    }
+
 }
