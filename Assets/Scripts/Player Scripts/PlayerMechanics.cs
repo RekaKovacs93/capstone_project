@@ -7,12 +7,19 @@ public class PlayerMechanics : MonoBehaviour
 {
     public Tilemap tilemap;
     public Rigidbody2D lightBoy;
-
+    
     [SerializeField]
     private CountDown countDown;
 
     public float speed = 10.5f;
+
+
     // Start is called before the first frame update
+
+        private void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,6 +31,7 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
             //pos.x += speed * Time.deltaTime;
         }
         if (Input.GetKey("s"))
@@ -31,6 +39,7 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.y -= speed * Time.deltaTime;
             countDown.moveDrain();
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
             //pos.x -= speed * Time.deltaTime;
         }
         if (Input.GetKey("d"))
@@ -38,6 +47,7 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.x += speed * Time.deltaTime;
             countDown.moveDrain();
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
             //pos.y -= speed * Time.deltaTime /2;
         }
         if (Input.GetKey("a"))
@@ -45,9 +55,17 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.x -= speed * Time.deltaTime;
             countDown.moveDrain();
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
             //pos.y += speed * Time.deltaTime /2;
         }
         
         lightBoy.transform.position = pos;
     }
+    public void increaseIntensity(float edibleValue)
+    {
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += edibleValue;
+    }
+
+ 
+
 }

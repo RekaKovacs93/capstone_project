@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortalTrigger : MonoBehaviour
+public class Edible : MonoBehaviour
 {
 
     public new Collider2D collider2D;
 
     [SerializeField]
-    private Portal portal;
+    private PlayerMechanics playerMechanics;
+
+
+
+    
+
 
     private bool activated = false;
 
@@ -16,11 +21,10 @@ public class PortalTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Player") && activated == false)
+        if (collision.CompareTag("Player"))
         {
-            activated = true;
-            portal.checkPortalTriggers();
-            Debug.Log("I am now active");
+            playerMechanics.increaseIntensity(10f);
+            //Destroy(collider2D);
         }
     }
 

@@ -6,7 +6,7 @@ public class RekaPortal : MonoBehaviour
 {
 
 
-    public Collider2D collider2D;
+    public new Collider2D collider2D;
 
     public bool portalOpen = false;
 
