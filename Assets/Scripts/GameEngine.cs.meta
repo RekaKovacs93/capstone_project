@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: aba2d260406104771a913688af8e69ab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - loseScreen: {fileID: 8797733050593769649, guid: b5f48914f59ca4399b095de6b064cba5, type: 3}
+  - winScreen: {fileID: 8274087868991070318, guid: 13675d23f3d0c49e68912f3f8e2cf570, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

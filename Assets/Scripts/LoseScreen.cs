@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScreen : MonoBehaviour
+public class LoseScreen : MonoBehaviour
 {
    public void GoToMainMenu()
     {
         SceneManager.LoadScene(0);
 
     }
-    public void NextLevel()
+
+    public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

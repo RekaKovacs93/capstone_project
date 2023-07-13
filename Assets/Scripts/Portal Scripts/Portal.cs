@@ -6,29 +6,22 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
 
-    public Collider2D collider2D;
+    public new Collider2D collider2D;
 
     private bool portalOpen = false;
 
+    [SerializeField] private GameEngine gameEngine;
+
 
     [SerializeReference]  private List<PortalTrigger> triggers;
-
-    [SerializeReference] private GameObject text;
-
-    private void Start()
-    {
-        //on start text will be set to false
-        text.SetActive(false);
-    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && portalOpen)
         {
-            text.SetActive(portalOpen);
-            Debug.Log("I aM TrIGgeRed by " + collision.name + " and I am now " + portalOpen);
-        }
+            gameEngine.ActivateWinScreen();
+         }
 
         else if (collision.CompareTag("Player")){
             Debug.Log("I am lost in darkness exdee");
