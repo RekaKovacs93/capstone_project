@@ -32,7 +32,7 @@ public class PlayerMechanics : MonoBehaviour
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.001f;
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
             //pos.x += speed * Time.deltaTime;
         }
         if (Input.GetKey("s"))
@@ -41,7 +41,7 @@ public class PlayerMechanics : MonoBehaviour
             pos.y -= speed * Time.deltaTime;
             countDown.moveDrain();
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.001f;
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
             //pos.x -= speed * Time.deltaTime;
         }
         if (Input.GetKey("d"))
@@ -50,7 +50,7 @@ public class PlayerMechanics : MonoBehaviour
             pos.x += speed * Time.deltaTime;
             countDown.moveDrain();
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.001f;
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
             //pos.y -= speed * Time.deltaTime /2;
         }
         if (Input.GetKey("a"))
@@ -59,7 +59,7 @@ public class PlayerMechanics : MonoBehaviour
             pos.x -= speed * Time.deltaTime;
             countDown.moveDrain();
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.001f;
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
             //pos.y += speed * Time.deltaTime /2;
         }
         
