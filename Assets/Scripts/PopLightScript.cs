@@ -25,7 +25,7 @@ public class PopLight : MonoBehaviour
         if (collision.CompareTag("Player") && canBeEaten)
         {
             //need to change this so that it affects radius
-            playerMechanics.increaseIntensity(10f);
+            playerMechanics.increaseLight();
             this.gameObject.SetActive(false);
         }
     }

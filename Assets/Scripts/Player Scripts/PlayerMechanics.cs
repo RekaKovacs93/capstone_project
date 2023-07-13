@@ -79,7 +79,7 @@ public class PlayerMechanics : MonoBehaviour
         
         lightBoy.transform.position = pos;
 
-        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.5f && !LevelLost)
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.3f && !LevelLost)
         {
             Debug.Log("Noooooooooooo");
             gameEngine.ActivateLoseScreen();
@@ -94,14 +94,20 @@ public class PlayerMechanics : MonoBehaviour
         }
 
     }
-    public void increaseIntensity(float edibleValue)
+    public void increaseLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += edibleValue;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f;
     }
 
     public void dropPopLight()
     {
-        GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity); 
+        GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.069f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f;
+
     }
 
 }

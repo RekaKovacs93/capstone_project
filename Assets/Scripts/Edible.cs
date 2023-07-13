@@ -21,7 +21,7 @@ public class Edible : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            playerMechanics.increaseIntensity(10f);
+            playerMechanics.increaseLight();
             this.gameObject.SetActive(false);
         }
     }
