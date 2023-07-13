@@ -18,18 +18,23 @@ public class PlayerMechanics : MonoBehaviour
 
     private bool LevelLost = false;
 
+    [SerializeField] private GameObject popLightPrefab;
+
+    private Vector3 pos;
 
     // Start is called before the first frame update
 
         private void Start()
     {
-        
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius = 0.15f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;
+        pos = transform.position;
 
         if (Input.GetKey("w") && !LevelLost)
         {
@@ -81,12 +86,22 @@ public class PlayerMechanics : MonoBehaviour
             LevelLost = true;
 
         }
+
+        if (Input.GetKeyDown("x"))
+        {
+            dropPopLight();
+            
+        }
+
     }
     public void increaseIntensity(float edibleValue)
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += edibleValue;
     }
 
-
+    public void dropPopLight()
+    {
+        GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity); 
+    }
 
 }
