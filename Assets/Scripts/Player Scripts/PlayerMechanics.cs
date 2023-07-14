@@ -41,40 +41,29 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
-            //pos.x += speed * Time.deltaTime;
+            drainLight();
         }
         if (Input.GetKey("s") && !LevelOver)
         {
             
             pos.y -= speed * Time.deltaTime;
             countDown.moveDrain();
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
-            //pos.x -= speed * Time.deltaTime;
+            drainLight();
         }
         if (Input.GetKey("d") && !LevelOver)
         {
             
             pos.x += speed * Time.deltaTime;
             countDown.moveDrain();
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
-            //pos.y -= speed * Time.deltaTime /2;
+            drainLight();
+
         }
         if (Input.GetKey("a") && !LevelOver)
         {
             
             pos.x -= speed * Time.deltaTime;
             countDown.moveDrain();
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
-            //pos.y += speed * Time.deltaTime /2;
+            drainLight();
         }
         
         lightBoy.transform.position = pos;
@@ -96,18 +85,24 @@ public class PlayerMechanics : MonoBehaviour
     }
     public void increaseLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f * Time.deltaTime;
     }
 
     public void dropPopLight()
     {
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.069f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.069f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f * Time.deltaTime;
 
+    }
+    public void drainLight()
+    {
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.01f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.01f * Time.deltaTime;
     }
 
     public void setLevelOver(bool status)
