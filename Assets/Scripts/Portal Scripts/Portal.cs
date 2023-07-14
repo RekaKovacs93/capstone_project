@@ -46,6 +46,7 @@ public class Portal : MonoBehaviour
         if (check)
         {
             portalOpen = true;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f;
             Debug.Log("Portal now active");
         }
         
