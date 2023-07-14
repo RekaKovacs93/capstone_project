@@ -10,6 +10,7 @@ public class PortalTrigger : MonoBehaviour
     [SerializeField]
     private Portal portal;
 
+
     private bool activated = false;
 
 
@@ -20,7 +21,9 @@ public class PortalTrigger : MonoBehaviour
         {
             activated = true;
             portal.checkPortalTriggers();
-            Debug.Log("I am now active");
+            Debug.Log(GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 109f;
+
         }
     }
 
