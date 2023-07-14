@@ -3450,8 +3450,12 @@ PrefabInstance:
       value: 0.03268051
       objectReference: {fileID: 0}
     - target: {fileID: 5161229497367021180, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161229497367021180, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5346823342555954555, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: m_RootOrder
@@ -23541,7 +23545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5161229497367021180, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5161229497367021180, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: m_OverlapOperation

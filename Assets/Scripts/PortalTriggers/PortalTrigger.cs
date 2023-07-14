@@ -10,8 +10,20 @@ public class PortalTrigger : MonoBehaviour
     [SerializeField]
     private Portal portal;
 
-
     private bool activated = false;
+
+    private void Update()
+    {
+    
+
+        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 50f && activated)
+        {
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 5f * Time.deltaTime;
+        }
+
+    }
+
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +35,7 @@ public class PortalTrigger : MonoBehaviour
             activated = true;
             portal.checkPortalTriggers();
             Debug.Log(GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 109f;
+            //GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 109f;
 
         }
     }

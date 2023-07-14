@@ -41,15 +41,7 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
-<<<<<<< HEAD
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.01f
-                //* Time.deltaTime;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0001f;
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
-            //pos.x += speed * Time.deltaTime;
-=======
             drainLight();
->>>>>>> 38cf2f46e0bf37f710966d494209a5f23033daf3
         }
         if (Input.GetKey("s") && !LevelOver)
         {

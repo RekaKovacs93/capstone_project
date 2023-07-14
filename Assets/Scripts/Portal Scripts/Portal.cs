@@ -22,14 +22,14 @@ public class Portal : MonoBehaviour
     {
         if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 1)
         {
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 1f * Time.deltaTime;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.09f * Time.deltaTime;
         }
         
 
         if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle < 130f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius >= 1 && portalOpen)
         {
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterAngle += 25f * Time.deltaTime;
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle += 25f * Time.deltaTime;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterAngle += 50f * Time.deltaTime;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle += 50f * Time.deltaTime;
         }
 
     }
