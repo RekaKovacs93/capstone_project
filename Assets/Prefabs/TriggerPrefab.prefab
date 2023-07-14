@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6904539216354225405}
   - component: {fileID: 1863260811290999471}
   - component: {fileID: 8676174950707546637}
+  - component: {fileID: -6585941430595442443}
   m_Layer: 0
   m_Name: TriggerPrefab
   m_TagString: Untagged
@@ -72,10 +73,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1811392275
-  m_SortingLayer: 3
+  m_SortingLayerID: -1086760517
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: daaaae34d0708154baf5d0353d396a41, type: 3}
   m_Color: {r: 0.12482201, g: 0.7581197, b: 0.8018868, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,8 +122,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.5}
+    pivot: {x: 0.5358154, y: 0.22763616}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -147,5 +148,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc05a23a4c114cdfb5ebd9685587c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 0}
-  portal: {fileID: 0}
+  collider2D: {fileID: 1376721482563482843, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+  portal: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+--- !u!50 &-6585941430595442443
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064694934102094928}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
