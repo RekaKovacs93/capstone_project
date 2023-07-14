@@ -10,6 +10,8 @@ public class Portal : MonoBehaviour
 
     private bool portalOpen = false;
 
+    [SerializeField] private PlayerMechanics playerMechanics;
+
     [SerializeField] private GameEngine gameEngine;
 
 
@@ -21,6 +23,7 @@ public class Portal : MonoBehaviour
         if (collision.CompareTag("Player") && portalOpen)
         {
             gameEngine.ActivateWinScreen();
+            playerMechanics.setLevelOver(true);
          }
 
         else if (collision.CompareTag("Player")){

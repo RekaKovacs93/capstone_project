@@ -16,7 +16,7 @@ public class PlayerMechanics : MonoBehaviour
     [SerializeField]
     private GameEngine gameEngine;
 
-    private bool LevelLost = false;
+    private bool LevelOver = false;
 
     [SerializeField] private GameObject popLightPrefab;
 
@@ -36,7 +36,7 @@ public class PlayerMechanics : MonoBehaviour
     {
         pos = transform.position;
 
-        if (Input.GetKey("w") && !LevelLost)
+        if (Input.GetKey("w") && !LevelOver)
         {
             
             pos.y += speed * Time.deltaTime;
@@ -46,7 +46,7 @@ public class PlayerMechanics : MonoBehaviour
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
             //pos.x += speed * Time.deltaTime;
         }
-        if (Input.GetKey("s") && !LevelLost)
+        if (Input.GetKey("s") && !LevelOver)
         {
             
             pos.y -= speed * Time.deltaTime;
@@ -56,7 +56,7 @@ public class PlayerMechanics : MonoBehaviour
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
             //pos.x -= speed * Time.deltaTime;
         }
-        if (Input.GetKey("d") && !LevelLost)
+        if (Input.GetKey("d") && !LevelOver)
         {
             
             pos.x += speed * Time.deltaTime;
@@ -66,7 +66,7 @@ public class PlayerMechanics : MonoBehaviour
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0001f;
             //pos.y -= speed * Time.deltaTime /2;
         }
-        if (Input.GetKey("a") && !LevelLost)
+        if (Input.GetKey("a") && !LevelOver)
         {
             
             pos.x -= speed * Time.deltaTime;
@@ -79,11 +79,11 @@ public class PlayerMechanics : MonoBehaviour
         
         lightBoy.transform.position = pos;
 
-        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.3f && !LevelLost)
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.3f && !LevelOver)
         {
             Debug.Log("Noooooooooooo");
             gameEngine.ActivateLoseScreen();
-            LevelLost = true;
+            setLevelOver(true);
 
         }
 
@@ -108,6 +108,11 @@ public class PlayerMechanics : MonoBehaviour
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.069f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f;
 
+    }
+
+    public void setLevelOver(bool status)
+    {
+        LevelOver = status;
     }
 
 }
