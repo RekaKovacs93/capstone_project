@@ -19,6 +19,7 @@ public class PortalTrigger : MonoBehaviour
 
         if (collision.CompareTag("Player") && activated == false)
         {
+            //Debug.Log()
             activated = true;
             portal.checkPortalTriggers();
             Debug.Log(GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
