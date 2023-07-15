@@ -7,10 +7,14 @@ public class PortalTrigger : MonoBehaviour
 
     public new Collider2D collider2D;
 
+    AudioSource audio;
+
     [SerializeField]
     private Portal portal;
 
     private bool activated = false;
+
+
 
     private void Update()
     {
@@ -32,9 +36,11 @@ public class PortalTrigger : MonoBehaviour
         if (collision.CompareTag("Player") && activated == false)
         {
             //Debug.Log()
+            audio = GetComponent<AudioSource>();
             activated = true;
             portal.checkPortalTriggers();
             Debug.Log(GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
+            audio.Play();
             //GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 109f;
 
         }

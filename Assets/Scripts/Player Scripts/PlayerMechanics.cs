@@ -108,6 +108,12 @@ public class PlayerMechanics : MonoBehaviour
     public void setLevelOver(bool status)
     {
         LevelOver = status;
+        Invoke("musicStop", 2f);
+    }
+
+    public void musicStop()
+    {
+        GetComponent<AudioSource>().Stop();
     }
 
 }
