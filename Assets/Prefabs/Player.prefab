@@ -82,11 +82,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8736909463531280725}
   - component: {fileID: 8983286582210160727}
-  - component: {fileID: 2108931269306791463}
   - component: {fileID: 7901724681497210767}
   - component: {fileID: 1376721482563482843}
   - component: {fileID: 2996603309288126904}
   - component: {fileID: 164648041913765611}
+  - component: {fileID: -370123399760682867}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -110,7 +110,7 @@ Transform:
   - {fileID: 7211423608335197370}
   - {fileID: 4961541873451463256}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8983286582210160727
 SpriteRenderer:
@@ -164,24 +164,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2108931269306791463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2800326767621919973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf294dcfe3d84f67921b511b4b11ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  lightBoy: {fileID: 7901724681497210767}
-  countDown: {fileID: 1154092870762285657}
-  speed: 1
-  gameEngine: {fileID: 0}
-  popLightPrefab: {fileID: 6263029553087934939, guid: 49489d6ea96474a21bcd235d6287a7ac, type: 3}
 --- !u!50 &7901724681497210767
 Rigidbody2D:
   serializedVersion: 4
@@ -390,6 +372,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-370123399760682867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800326767621919973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b712fdfc0e0f457c99e42190e88cdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  lightBoy: {fileID: 7901724681497210767}
+  countDown: {fileID: 1154092870762285657}
+  speed: 1
+  gameEngine: {fileID: 0}
+  popLightPrefab: {fileID: 6263029553087934939, guid: 49489d6ea96474a21bcd235d6287a7ac, type: 3}
 --- !u!1 &4411019894400995876
 GameObject:
   m_ObjectHideFlags: 0

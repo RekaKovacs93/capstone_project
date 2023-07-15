@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 38231315169015626}
   - component: {fileID: 6856276079987429971}
   - component: {fileID: 1921066691033781318}
+  - component: {fileID: -2972636887744669892}
   m_Layer: 3
   m_Name: Edible
   m_TagString: Player
@@ -415,3 +416,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2972636887744669892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361719095389982227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddff1c2960ad84796ba1d0474dddb0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2D: {fileID: 38231315169015626}
+  playerMechanics: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}

@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 176997522}
-  playerMechanics: {fileID: 993107613}
+  playerMechanics: {fileID: 0}
 --- !u!58 &176997522 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 38231315169015626, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 341509845}
-  playerMechanics: {fileID: 993107613}
+  playerMechanics: {fileID: 0}
 --- !u!58 &341509845 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 38231315169015626, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
@@ -1895,7 +1895,7 @@ PrefabInstance:
     - target: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
       propertyPath: playerMechanics
       value: 
-      objectReference: {fileID: 993107613}
+      objectReference: {fileID: 0}
     - target: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
       propertyPath: triggers.Array.data[0]
       value: 
@@ -2012,7 +2012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 902379962}
-  playerMechanics: {fileID: 993107613}
+  playerMechanics: {fileID: 0}
 --- !u!58 &902379962 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 38231315169015626, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
@@ -2033,17 +2033,6 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 1376721482563482843, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   m_PrefabInstance: {fileID: 523676595957269591}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &993107613 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2108931269306791463, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
-  m_PrefabInstance: {fileID: 523676595957269591}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf294dcfe3d84f67921b511b4b11ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &993107615 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
@@ -2345,7 +2334,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edible
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2972636887744669892, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3642,7 +3632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1618490121}
-  playerMechanics: {fileID: 993107613}
+  playerMechanics: {fileID: 0}
 --- !u!58 &1618490121 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 38231315169015626, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
@@ -23778,18 +23768,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306527981}
     m_Modifications:
+    - target: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 1945255272}
+    - target: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: gameEngine
+      value: 
+      objectReference: {fileID: 2015159951}
     - target: {fileID: 164648041913765611, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_Volume
       value: 0.34
       objectReference: {fileID: 0}
-    - target: {fileID: 2108931269306791463, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
-      propertyPath: tilemap
-      value: 
-      objectReference: {fileID: 1945255272}
-    - target: {fileID: 2108931269306791463, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
-      propertyPath: gameEngine
-      value: 
-      objectReference: {fileID: 2015159951}
     - target: {fileID: 2800326767621919973, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -23838,7 +23828,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

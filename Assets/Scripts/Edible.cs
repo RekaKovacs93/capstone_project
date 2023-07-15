@@ -22,12 +22,12 @@ public class Edible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        audio.Play();
+        
 
         if (collision.CompareTag("Player"))
         {
 
-
+            audio.Play();
             playerMechanics.increaseLight();
             Invoke("disableEdible", 0.1f);
        
