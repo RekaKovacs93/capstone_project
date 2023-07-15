@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 341509845}
-  playerMechanics: {fileID: 0}
+  playerMechanics: {fileID: 993107616}
 --- !u!58 &341509845 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 38231315169015626, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
@@ -2038,6 +2038,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   m_PrefabInstance: {fileID: 523676595957269591}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &993107616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+  m_PrefabInstance: {fileID: 523676595957269591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b712fdfc0e0f457c99e42190e88cdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!60 &1204151813 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 1863260811290999471, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
