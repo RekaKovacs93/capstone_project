@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1921066691033781318, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
       value: 373.4
@@ -3701,6 +3705,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1285347157}
     m_Modifications:
+    - target: {fileID: -8333941297836013676, guid: 13675d23f3d0c49e68912f3f8e2cf570, type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8333941297836013676, guid: 13675d23f3d0c49e68912f3f8e2cf570, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -23770,6 +23778,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306527981}
     m_Modifications:
+    - target: {fileID: 164648041913765611, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_Volume
+      value: 0.34
+      objectReference: {fileID: 0}
     - target: {fileID: 2108931269306791463, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: tilemap
       value: 

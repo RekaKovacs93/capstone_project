@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-
+    AudioSource audio;
     public new Collider2D collider2D;
 
     private bool portalOpen = false;
@@ -62,6 +62,8 @@ public class Portal : MonoBehaviour
         if (check)
         {
             portalOpen = true;
+            audio = GetComponent<AudioSource>();
+            audio.Play();
             GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f;
             Debug.Log("Portal now active");
         }

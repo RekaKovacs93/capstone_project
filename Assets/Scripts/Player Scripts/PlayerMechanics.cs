@@ -85,7 +85,7 @@ public class PlayerMechanics : MonoBehaviour
     }
     public void increaseLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f * Time.deltaTime;
     }
@@ -108,12 +108,13 @@ public class PlayerMechanics : MonoBehaviour
     public void setLevelOver(bool status)
     {
         LevelOver = status;
-        Invoke("musicStop", 2f);
-    }
-
-    public void musicStop()
-    {
         GetComponent<AudioSource>().Stop();
     }
+
+    //public void musicFade()
+    //{
+    //    while()
+    //    GetComponent<AudioSource>().Stop();
+    //}
 
 }
