@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class IntroTextManager : MonoBehaviour
 {
-    //[SerializeField]
-    //private IntroTimer timer;
 
     [SerializeField]
     private float timer = 0;
@@ -19,7 +17,7 @@ public class IntroTextManager : MonoBehaviour
 
     [SerializeField]
     private GameObject narrationText3;
-    // Start is called before the first frame update
+   
 
 
     void Start()
@@ -30,7 +28,7 @@ public class IntroTextManager : MonoBehaviour
         narrationText3.SetActive(false);
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         if (timer < 1000)
@@ -64,9 +62,5 @@ public class IntroTextManager : MonoBehaviour
     }
 
 
-    //public void text1Disappear()
-    //{
-    //    narrationText1.SetActive(false);
-    //}
-
+  
 }
