@@ -4146,6 +4146,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2783885569770009563, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
   m_PrefabInstance: {fileID: 393389571}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &459338360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+  m_PrefabInstance: {fileID: 393389571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459338359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17bf5f1dc62b4084b9f4c609acf4212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &459338361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6366,15 +6377,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_LightType: 3
+  m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.804
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000011d42e25bb5939bfd7c6386e15e26567ed580894e76f24e7ef3b638b017f1255
-  m_LightCookieSprite: {fileID: 0}
+  m_LightCookieSprite: {fileID: 21300000, guid: 43a2ecd0d39d54eaaaf31ec6eae7b3a2, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
@@ -6387,33 +6398,41 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 0
-  m_PointLightOuterAngle: 9.639923
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0
+    m_Center: {x: -0.17150009, y: 0.013000011, z: 0}
+    m_Extent: {x: 3.3073, y: 3.5204, z: 0}
+  m_PointLightInnerAngle: 274.46808
+  m_PointLightOuterAngle: 319.21436
+  m_PointLightInnerRadius: 3.63
+  m_PointLightOuterRadius: 14.08
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 3.18
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &1256534344 stripped
+  - {x: -0.29717395, y: -0.22777404, z: 0}
+  - {x: -0.042697046, y: -0.32005405, z: 0}
+  - {x: -0.040757854, y: -0.028444838, z: 0}
+  - {x: -0.08655146, y: 0.25545812, z: 0}
+  - {x: -0.29717386, y: 0.36158004, z: 0}
+--- !u!114 &1256534348
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
-  m_PrefabInstance: {fileID: 1809736158}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256534341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d17bf5f1dc62b4084b9f4c609acf4212, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fdea3f8dbfff4bc0965401722d76168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collider2D: {fileID: 885489921}
+  playerMechanics: {fileID: 885489922}
+  gameEngine: {fileID: 2044241145}
+  triggers:
+  - {fileID: 2009348915}
+  - {fileID: 798171173}
 --- !u!1001 &1284250849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7908,7 +7927,7 @@ PrefabInstance:
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 1256534344}
+      objectReference: {fileID: 459338360}
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: collider2D
       value: 
@@ -7975,6 +7994,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1436533814}
+    - target: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
       propertyPath: collider2D
       value: 
@@ -8075,13 +8098,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2783885569770009563, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1256534342}
+    - targetCorrespondingSourceObject: {fileID: 2783885569770009563, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1256534348}
   m_SourcePrefab: {fileID: 100100000, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
 --- !u!1001 &1922748292
 PrefabInstance:
@@ -8398,7 +8425,7 @@ PrefabInstance:
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 1256534344}
+      objectReference: {fileID: 459338360}
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: collider2D
       value: 
