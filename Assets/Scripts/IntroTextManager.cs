@@ -27,7 +27,22 @@ public class IntroTextManager : MonoBehaviour
     [SerializeField]
     private GameObject narrationText6;
 
+    [SerializeField]
+    private GameObject narrationText7;
 
+    [SerializeField]
+    private GameObject narrationText8;
+
+    new AudioSource audio;
+
+    public void MusicFade()
+    {
+        audio = GetComponent<AudioSource>();
+        if (audio.volume > 0)
+        {
+            audio.volume -= 0.0005f;
+        }
+    }
 
     void Start()
     {
@@ -38,6 +53,8 @@ public class IntroTextManager : MonoBehaviour
         narrationText4.SetActive(false);
         narrationText5.SetActive(false);
         narrationText6.SetActive(false);
+        narrationText7.SetActive(false);
+        narrationText8.SetActive(false);
     }
 
  
@@ -57,7 +74,7 @@ public class IntroTextManager : MonoBehaviour
         {
             narrationText2.SetActive(true);
         }
-        if (timer > 24)
+        if (timer > 24.8)
         {
             narrationText3.SetActive(true);
         }
@@ -75,12 +92,34 @@ public class IntroTextManager : MonoBehaviour
         {
             narrationText5.SetActive(true);
         }
-        if (timer > 33.5)
+        if (timer > 33.8)
         {
             narrationText4.SetActive(false);
             narrationText5.SetActive(false);
         }
-        if (timer > 50)
+        if (timer > 35)
+        {
+            narrationText6.SetActive(true);
+        }
+        if (timer > 36)
+        {
+            narrationText6.SetActive(false);
+            narrationText7.SetActive(true);
+        }
+        if (timer > 37)
+        {
+            narrationText7.SetActive(false);
+            narrationText8.SetActive(true);
+        }
+        if (timer > 39)
+        {
+            narrationText8.SetActive(false);
+        }
+        if (timer > 64)
+        {
+            MusicFade();
+        }
+        if (timer > 70)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
