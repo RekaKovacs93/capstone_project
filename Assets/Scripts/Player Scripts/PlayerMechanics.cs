@@ -110,4 +110,12 @@ public class PlayerMechanics : MonoBehaviour
         LevelOver = status;
     }
 
+
+    public void crystalReducePlayerLight()
+    {
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 1.40f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.30f;
+    }
+
 }
