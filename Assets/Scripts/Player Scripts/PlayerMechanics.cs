@@ -85,22 +85,28 @@ public class PlayerMechanics : MonoBehaviour
     }
     public void IncreaseLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f * Time.deltaTime;
+        Debug.Log("my light is increasing");
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity <= 80) {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 20f;
+        } else
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
+        }
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.138f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.3f;
     }
 
     public void DropPopLight()
     {
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.069f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.138f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.3f;
 
     }
     public void DrainLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.2f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.01f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.01f * Time.deltaTime;
     }

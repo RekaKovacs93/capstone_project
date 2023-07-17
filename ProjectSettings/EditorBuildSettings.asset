@@ -11,16 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroNarration.unity
     guid: 17cd315ae343c4ce087c81b07e70fd54
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial Scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DanScene.unity
     guid: 4f04784b2912540128fa9c3ac6b7c50c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AlexScene.unity
     guid: 0455b19fb5c5f49b492f5f3fc91e5892
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Reka's Scene.unity
     guid: 93a488111b81d419ab8af353c9d2e1d3
+  - enabled: 1
+    path: Assets/Scenes/TutorialSceneV2.unity
+    guid: 483b2271ed9f14a188cf9731c6396d92
   m_configObjects: {}

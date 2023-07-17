@@ -26,10 +26,11 @@ public class Edible : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-
+            Debug.Log("I am colliding");
+            this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             audio.Play();
             playerMechanics.IncreaseLight();
-            Invoke("disableEdible", 0.1f);
+            Invoke("disableEdible", 3f);
        
             
         }
@@ -38,5 +39,6 @@ public class Edible : MonoBehaviour
         this.gameObject.SetActive(false);
 
 }
+    
 
 }
