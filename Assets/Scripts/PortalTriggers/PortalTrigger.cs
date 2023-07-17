@@ -14,13 +14,13 @@ public class PortalTrigger : MonoBehaviour
 
     private bool activated = false;
 
-    private PlayerMechanics player;
+    [SerializeField] private PlayerMechanics player;
 
 
 
     private void Start()
     {
-        PlayerMechanics player = GetComponent<PlayerMechanics>();
+
     }
 
     private void Update()
