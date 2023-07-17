@@ -22,9 +22,16 @@ public class PlayerMechanics : MonoBehaviour
 
     private Vector3 pos;
 
+
+    private Queue<float> queue; // TODO: initialize
+    private int smoothing = 5;
+
+ 
+
+
     // Start is called before the first frame update
 
-        private void Start()
+    private void Start()
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
@@ -82,7 +89,14 @@ public class PlayerMechanics : MonoBehaviour
             
         }
 
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.5)
+        {
+            StartCoroutine(Flicker());
+        }
+
     }
+
+ 
     public void IncreaseLight()
     {
         Debug.Log("my light is increasing");
@@ -123,6 +137,16 @@ public class PlayerMechanics : MonoBehaviour
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 3f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 5f;
         Debug.Log(lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
+    }
+
+    IEnumerator Flicker()
+    {
+        while (true)
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Random.Range(10, 30);
+            var randomTime = Random.Range(0, 0.5f);
+            yield return new WaitForSeconds(randomTime);
+        }
     }
 
 }
