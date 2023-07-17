@@ -2,44 +2,75 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RekaPortal : MonoBehaviour
 {
-
-
+    AudioSource audio;
     public new Collider2D collider2D;
 
-    public bool portalOpen = false;
+    private bool portalOpen = false;
 
-    [SerializeReference]
-    public List<RekaTrigger> triggers;
+    [SerializeField] private PlayerMechanics playerMechanics;
 
-    public GameObject text;
+    [SerializeField] private GameEngine gameEngine;
 
-    private void Start()
+
+    [SerializeReference] private List<PortalTrigger> triggers;
+
+
+    private void Update()
     {
-        text.SetActive(false);
+        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 10)
+        {
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.09f * Time.deltaTime;
+        }
+
+
+        //if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle < 130f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius >= 1 && portalOpen)
+        //{
+        //    GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterAngle += 50f * Time.deltaTime;
+        //    GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle += 50f * Time.deltaTime;
+        //}
 
     }
-    public void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && portalOpen)
         {
-            foreach (RekaTrigger trigger in triggers)
-            {
-                if (trigger.activated == false)
-                {
-                    portalOpen = false;
-                    Debug.Log("I aM Not Activated");
-                }
-                else
-                {
-                    portalOpen = true;
-                    text.SetActive(portalOpen);
-                    Debug.Log("I aM Activated");
+            gameEngine.ActivateWinScreen();
+            playerMechanics.setLevelOver(true);
+        }
 
-                }
-            }
-
+        else if (collision.CompareTag("Player"))
+        {
+            Debug.Log("I am lost in darkness exdee");
         }
     }
+
+    public void checkPortalTriggers()
+    {
+
+        bool check = true;
+
+        foreach (PortalTrigger trigger in triggers)
+        {
+            if (!trigger.getActivated())
+            {
+                check = false;
+            }
+        }
+
+        if (check)
+        {
+            portalOpen = true;
+            audio = GetComponent<AudioSource>();
+            audio.Play();
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f;
+            Debug.Log("Portal now active");
+        }
+
+    }
+
+
 }
