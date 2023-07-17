@@ -41,21 +41,21 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
-            drainLight();
+            DrainLight();
         }
         if (Input.GetKey("s") && !LevelOver)
         {
             
             pos.y -= speed * Time.deltaTime;
             countDown.moveDrain();
-            drainLight();
+            DrainLight();
         }
         if (Input.GetKey("d") && !LevelOver)
         {
             
             pos.x += speed * Time.deltaTime;
             countDown.moveDrain();
-            drainLight();
+            DrainLight();
 
         }
         if (Input.GetKey("a") && !LevelOver)
@@ -63,7 +63,7 @@ public class PlayerMechanics : MonoBehaviour
             
             pos.x -= speed * Time.deltaTime;
             countDown.moveDrain();
-            drainLight();
+            DrainLight();
         }
         
         lightBoy.transform.position = pos;
@@ -72,25 +72,25 @@ public class PlayerMechanics : MonoBehaviour
         {
             Debug.Log("Noooooooooooo");
             gameEngine.ActivateLoseScreen();
-            setLevelOver(true);
+            SetLevelOver(true);
 
         }
 
         if (Input.GetKeyDown("x"))
         {
-            dropPopLight();
+            DropPopLight();
             
         }
 
     }
-    public void increaseLight()
+    public void IncreaseLight()
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 10f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.069f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.015f * Time.deltaTime;
     }
 
-    public void dropPopLight()
+    public void DropPopLight()
     {
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f * Time.deltaTime;
@@ -98,24 +98,25 @@ public class PlayerMechanics : MonoBehaviour
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.015f * Time.deltaTime;
 
     }
-    public void drainLight()
+    public void DrainLight()
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.01f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.01f * Time.deltaTime;
     }
 
-    public void setLevelOver(bool status)
+    public void SetLevelOver(bool status)
     {
         LevelOver = status;
     }
 
 
-    public void crystalReducePlayerLight()
+    public void CrystalReducePlayerLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 1.40f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.30f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 50f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 3f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 5f;
+        Debug.Log(lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
     }
 
 }

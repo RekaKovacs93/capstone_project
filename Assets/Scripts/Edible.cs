@@ -28,7 +28,7 @@ public class Edible : MonoBehaviour
         {
 
             audio.Play();
-            playerMechanics.increaseLight();
+            playerMechanics.IncreaseLight();
             Invoke("disableEdible", 0.1f);
        
             

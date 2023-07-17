@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 1376721482563482843, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   portal: {fileID: 4599347225671118975, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+  player: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
 --- !u!50 &-6585941430595442443
 Rigidbody2D:
   serializedVersion: 4

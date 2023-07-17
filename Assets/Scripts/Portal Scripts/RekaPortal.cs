@@ -39,7 +39,7 @@ public class RekaPortal : MonoBehaviour
         if (collision.CompareTag("Player") && portalOpen)
         {
             gameEngine.ActivateWinScreen();
-            playerMechanics.setLevelOver(true);
+            playerMechanics.SetLevelOver(true);
         }
 
         else if (collision.CompareTag("Player"))

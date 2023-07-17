@@ -5,7 +5,7 @@ using UnityEngine;
 public class PortalTrigger : MonoBehaviour
 {
 
-    public new Collider2D collider2D;
+    public Collider2D collider2D;
 
     AudioSource audio;
 
@@ -14,14 +14,10 @@ public class PortalTrigger : MonoBehaviour
 
     private bool activated = false;
 
-    [SerializeField] private PlayerMechanics player;
 
+    [SerializeField] PlayerMechanics player;
 
-
-    private void Start()
-    {
-
-    }
+    
 
     private void Update()
     {
@@ -42,15 +38,13 @@ public class PortalTrigger : MonoBehaviour
 
         if (collision.CompareTag("Player") && activated == false)
         {
-            //Debug.Log()
+            Debug.Log(player);
             
             audio = GetComponent<AudioSource>();
             activated = true;
             portal.checkPortalTriggers();
-            //Debug.Log(GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
-            player.crystalReducePlayerLight();
+            player.CrystalReducePlayerLight();
             audio.Play();
-            //GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 109f;
 
         }
     }
