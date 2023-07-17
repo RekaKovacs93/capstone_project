@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 6923709260704028243}
   playerMechanics: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+  onReabsorb: {fileID: 3869143786001591064, guid: 76e22ba0dc0804705a07b14a85e15ddc, type: 3}
 --- !u!82 &6131846559134962917
 AudioSource:
   m_ObjectHideFlags: 0

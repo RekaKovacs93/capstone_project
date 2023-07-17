@@ -9,12 +9,14 @@ public class PopLight : MonoBehaviour
 
     [SerializeField]
     private PlayerMechanics playerMechanics;
+
+   
     private bool canBeEaten = false;
 
     private void Start()
     {
         this.gameObject.SetActive(true);
-        //Invoke("delayActivate",3f);
+       
         
     }
 
@@ -37,6 +39,8 @@ public class PopLight : MonoBehaviour
             canBeEaten = true;
         }
     }
+
+  
     
         
 }
