@@ -332,4 +332,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 6923709260704028243}
-  playerMechanics: {fileID: 2108931269306791463, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+  playerMechanics: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
