@@ -39,6 +39,27 @@ public class IntroTextManager : MonoBehaviour
     [SerializeField]
     private GameObject narrationText10;
 
+    [SerializeField]
+    private GameObject narrationText11;
+
+    [SerializeField]
+    private GameObject narrationText12;
+
+    [SerializeField]
+    private GameObject narrationText13;
+
+    [SerializeField]
+    private GameObject narrationText14;
+
+    [SerializeField]
+    private GameObject narrationText15;
+
+    [SerializeField]
+    private GameObject narrationText16;
+
+    [SerializeField]
+    private GameObject narrationText17;
+
     new AudioSource audio;
 
     public void MusicFade()
@@ -46,7 +67,7 @@ public class IntroTextManager : MonoBehaviour
         audio = GetComponent<AudioSource>();
         if (audio.volume > 0)
         {
-            audio.volume -= 0.0005f;
+            audio.volume -= 0.0003f;
         }
     }
 
@@ -63,6 +84,13 @@ public class IntroTextManager : MonoBehaviour
         narrationText8.SetActive(false);
         narrationText9.SetActive(false);
         narrationText10.SetActive(false);
+        narrationText11.SetActive(false);
+        narrationText12.SetActive(false);
+        narrationText13.SetActive(false);
+        narrationText14.SetActive(false);
+        narrationText15.SetActive(false);
+        narrationText16.SetActive(false);
+        narrationText17.SetActive(false);
     }
 
  
@@ -114,7 +142,7 @@ public class IntroTextManager : MonoBehaviour
             narrationText6.SetActive(false);
             narrationText7.SetActive(true);
         }
-        if (timer > 37)
+        if (timer > 37.5)
         {
             narrationText7.SetActive(false);
             narrationText8.SetActive(true);
@@ -132,6 +160,49 @@ public class IntroTextManager : MonoBehaviour
         if (timer > 46)
         {
             narrationText10.SetActive(false);
+        }
+        if (timer > 47)
+        {
+            narrationText11.SetActive(true);
+        }
+        if (timer > 49)
+        {
+            narrationText11.SetActive(false);
+        }
+        if (timer > 51)
+        {
+            narrationText12.SetActive(true);
+        }
+        if (timer > 53.5)
+        {
+            narrationText13.SetActive(true);
+        }
+        if (timer > 54.5)
+        {
+            narrationText14.SetActive(true);
+        }
+        if (timer > 57)
+        {
+            narrationText12.SetActive(false);
+            narrationText13.SetActive(false);
+            narrationText14.SetActive(false);
+        }
+        if (timer > 58)
+        {
+            narrationText15.SetActive(true);
+        }
+        if (timer > 60)
+        {
+            narrationText16.SetActive(true);
+            narrationText17.SetActive(true);
+        }
+        if (timer > 62)
+        {
+            narrationText15.SetActive(false);
+        }
+        if (timer > 64)
+        {
+            narrationText16.SetActive(false);
         }
         if (timer > 64)
         {
