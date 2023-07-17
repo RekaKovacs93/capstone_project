@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Portal
   - Text
+  - Edible
   layers:
   - Default
   - TransparentFX
