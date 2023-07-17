@@ -1247,12 +1247,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1772360948}
   m_SourcePrefab: {fileID: 100100000, guid: f226f27cd5a7c482b8099f80a8877ebb, type: 3}
+--- !u!1 &295948389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800326767621919973, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+  m_PrefabInstance: {fileID: 484459827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &295948390 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   m_PrefabInstance: {fileID: 484459827}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 295948389}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b712fdfc0e0f457c99e42190e88cdab, type: 3}
@@ -1268,6 +1273,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   m_PrefabInstance: {fileID: 484459827}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &295948397
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295948389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5773d495f6004d4cbd222fbfd9943ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &421250722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1591,6 +1617,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_Intensity
+      value: 100.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4961541873451463256, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -1647,7 +1685,10 @@ PrefabInstance:
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2800326767621919973, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 295948397}
   m_SourcePrefab: {fileID: 100100000, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
 --- !u!4 &509334834 stripped
 Transform:
@@ -4835,6 +4876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 872858412}
+  - component: {fileID: 872858413}
   m_Layer: 0
   m_Name: Edibles
   m_TagString: Untagged
@@ -4869,6 +4911,27 @@ Transform:
   m_Father: {fileID: 1650278810}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &872858413
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872858411}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd6f4c6408a9b4b7e806407cf1d470ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &890890688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7366472700815463880, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
