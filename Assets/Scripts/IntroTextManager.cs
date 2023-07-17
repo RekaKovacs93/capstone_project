@@ -33,6 +33,12 @@ public class IntroTextManager : MonoBehaviour
     [SerializeField]
     private GameObject narrationText8;
 
+    [SerializeField]
+    private GameObject narrationText9;
+
+    [SerializeField]
+    private GameObject narrationText10;
+
     new AudioSource audio;
 
     public void MusicFade()
@@ -55,6 +61,8 @@ public class IntroTextManager : MonoBehaviour
         narrationText6.SetActive(false);
         narrationText7.SetActive(false);
         narrationText8.SetActive(false);
+        narrationText9.SetActive(false);
+        narrationText10.SetActive(false);
     }
 
  
@@ -111,9 +119,19 @@ public class IntroTextManager : MonoBehaviour
             narrationText7.SetActive(false);
             narrationText8.SetActive(true);
         }
-        if (timer > 39)
+        if (timer > 40)
         {
             narrationText8.SetActive(false);
+            narrationText9.SetActive(true);
+        }
+        if (timer > 42)
+        {
+            narrationText9.SetActive(false);
+            narrationText10.SetActive(true);
+        }
+        if (timer > 46)
+        {
+            narrationText10.SetActive(false);
         }
         if (timer > 64)
         {
