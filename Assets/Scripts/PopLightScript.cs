@@ -10,14 +10,15 @@ public class PopLight : MonoBehaviour
     [SerializeField]
     private PlayerMechanics playerMechanics;
 
-   
+    [SerializeField]
+    private AudioSource audioSource;
+
     private bool canBeEaten = false;
 
     private void Start()
     {
         this.gameObject.SetActive(true);
-       
-        
+
     }
 
 
@@ -26,9 +27,12 @@ public class PopLight : MonoBehaviour
 
         if (collision.CompareTag("Player") && canBeEaten)
         {
+
             //need to change this so that it affects radius
+            audioSource.Play();
+            this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             playerMechanics.IncreaseLight();
-            this.gameObject.SetActive(false);
+            Invoke("Disappear", 1f);
         }
     }
 
@@ -38,6 +42,11 @@ public class PopLight : MonoBehaviour
         {
             canBeEaten = true;
         }
+    }
+
+    private void Disappear()
+    {
+        this.gameObject.SetActive(false);
     }
 
   
