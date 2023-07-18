@@ -135,9 +135,9 @@ public class PlayerMechanics : MonoBehaviour
     }
     public void DrainLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.6f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.00414f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0009f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.12f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.00828f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0018f * Time.deltaTime;
     }
 
     public void SetLevelOver(bool status)
