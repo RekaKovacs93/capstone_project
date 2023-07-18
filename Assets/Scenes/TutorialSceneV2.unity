@@ -22617,7 +22617,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000011d42e25bb5939bfd7c6386e15e26567ed580894e76f24e7ef3b638b017f1255
@@ -23519,6 +23519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2038185883}
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: portal
       value: 
@@ -55963,6 +55967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2038185883}
     - target: {fileID: 8676174950707546637, guid: 95ad041c6ea0342cfacd7ade290f9594, type: 3}
       propertyPath: portal
       value: 
