@@ -148,6 +148,7 @@ public class PlayerMechanics : MonoBehaviour
 
     public void CrystalReducePlayerLight()
     {
+        Debug.Log("light before " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.3f;
@@ -156,12 +157,9 @@ public class PlayerMechanics : MonoBehaviour
 
     IEnumerator Flicker()
     {
-        //while (true)
-        //{
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Random.Range(10, 30);
             var randomTime = Random.Range(0, 0.5f);
             yield return new WaitForSeconds(randomTime);
-        //}
     }
 
 }
