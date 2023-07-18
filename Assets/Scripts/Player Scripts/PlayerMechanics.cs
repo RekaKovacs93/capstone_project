@@ -113,7 +113,15 @@ public class PlayerMechanics : MonoBehaviour
         {
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
         }
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.3f;
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius <= 0.12)
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.03f;
+        }
+        else
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius = 0.15f;
+        }
+
     }
 
     public void DropPopLight()
@@ -127,8 +135,8 @@ public class PlayerMechanics : MonoBehaviour
     public void DrainLight()
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.2f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.01f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.01f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0276f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0006f * Time.deltaTime;
     }
 
     public void SetLevelOver(bool status)
@@ -139,7 +147,6 @@ public class PlayerMechanics : MonoBehaviour
 
     public void CrystalReducePlayerLight()
     {
-        Debug.Log("The light was at " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 50f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 3f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 5f;
@@ -148,12 +155,12 @@ public class PlayerMechanics : MonoBehaviour
 
     IEnumerator Flicker()
     {
-        while (true)
-        {
+        //while (true)
+        //{
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Random.Range(10, 30);
             var randomTime = Random.Range(0, 0.5f);
             yield return new WaitForSeconds(randomTime);
-        }
+        //}
     }
 
 }
