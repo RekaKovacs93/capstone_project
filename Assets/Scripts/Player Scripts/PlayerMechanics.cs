@@ -135,7 +135,7 @@ public class PlayerMechanics : MonoBehaviour
     public void DrainLight()
     {
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f * Time.deltaTime;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.00069f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.00015f * Time.deltaTime;
     }
 
