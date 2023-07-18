@@ -99,7 +99,7 @@ public class PlayerMechanics : MonoBehaviour
  
     public void IncreaseLight()
     {
-        Debug.Log("Before"+"Intensity"+ lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer" + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner" + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
+        Debug.Log("Before "+"Intensity "+ lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
         if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity <= 80) {
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 20f;
         } else
@@ -121,7 +121,7 @@ public class PlayerMechanics : MonoBehaviour
         {
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius = 0.15f;
         }
-        Debug.Log("After"+"Intensity" + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer" + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner" + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
+        Debug.Log("After "+"Intensity " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
     }
 
     public void DropPopLight()
