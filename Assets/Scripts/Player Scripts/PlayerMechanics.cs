@@ -126,10 +126,11 @@ public class PlayerMechanics : MonoBehaviour
 
     public void DropPopLight()
     {
+        
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.138f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.3f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 2f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
 
     }
     public void DrainLight()
