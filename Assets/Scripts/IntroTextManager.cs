@@ -175,16 +175,17 @@ public class IntroTextManager : MonoBehaviour
         }
         if (timer > 53.5)
         {
+            narrationText12.SetActive(false);
             narrationText13.SetActive(true);
         }
         if (timer > 54.5)
         {
+            narrationText13.SetActive(false);
             narrationText14.SetActive(true);
         }
         if (timer > 57)
         {
-            narrationText12.SetActive(false);
-            narrationText13.SetActive(false);
+         
             narrationText14.SetActive(false);
         }
         if (timer > 58)
@@ -193,16 +194,18 @@ public class IntroTextManager : MonoBehaviour
         }
         if (timer > 60)
         {
+            narrationText15.SetActive(false);
             narrationText16.SetActive(true);
-            narrationText17.SetActive(true);
+            
         }
         if (timer > 62)
         {
-            narrationText15.SetActive(false);
+            narrationText16.SetActive(false);
+            narrationText17.SetActive(true);
         }
         if (timer > 64)
         {
-            narrationText16.SetActive(false);
+            
         }
         if (timer > 64)
         {
