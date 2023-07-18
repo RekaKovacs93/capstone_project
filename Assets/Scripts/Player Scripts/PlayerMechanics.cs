@@ -133,10 +133,11 @@ public class PlayerMechanics : MonoBehaviour
 
     public void CrystalReducePlayerLight()
     {
+        Debug.Log("The light was at " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 50f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 3f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 5f;
-        Debug.Log(lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
+        Debug.Log("I have reduced the light to "+lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
     }
 
     IEnumerator Flicker()
