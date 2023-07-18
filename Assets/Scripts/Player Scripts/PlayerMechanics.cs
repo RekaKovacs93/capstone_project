@@ -106,7 +106,13 @@ public class PlayerMechanics : MonoBehaviour
         {
             lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
         }
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.138f;
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius <= 0.552)
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.138f;
+        } else
+        {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
+        }
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius += 0.3f;
     }
 
