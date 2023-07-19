@@ -157,7 +157,7 @@ public class PlayerMechanics : MonoBehaviour
 
     IEnumerator Flicker()
     {
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Random.Range(10, 30);
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Random.Range(0.1f, 0.3f);
             var randomTime = Random.Range(0, 0.5f);
             yield return new WaitForSeconds(randomTime);
     }
