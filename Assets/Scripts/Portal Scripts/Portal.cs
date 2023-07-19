@@ -26,7 +26,7 @@ public class Portal : MonoBehaviour
         }
         
 
-        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle < 130f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius >= 1 && portalOpen)
+        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle < 360f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius >= 1 && portalOpen)
         {
             GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterAngle += 50f * Time.deltaTime;
             GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle += 50f * Time.deltaTime;
