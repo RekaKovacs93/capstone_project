@@ -71,4 +71,9 @@ public class Portal : MonoBehaviour
     }
 
 
+    public bool getPortalStatus()
+    {
+        return portalOpen;
+    }
+
 }

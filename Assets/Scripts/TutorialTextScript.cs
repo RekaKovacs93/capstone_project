@@ -10,7 +10,7 @@ public class TutorialTextScript : MonoBehaviour
     [SerializeField]
     private GameObject text;
 
-
+    [SerializeField] Portal portal;
 
     [SerializeField]
     private Collider2D textTrigger;
@@ -30,16 +30,22 @@ public class TutorialTextScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && textTrigger.CompareTag("Trigger2") && portal.getPortalStatus())
         {
             text.SetActive(true);
-
         }
-
-
+        else if (collision.CompareTag("Player") && !textTrigger.CompareTag("Trigger2"))
+        {
+            text.SetActive(true);
+        
+        }
     }
+
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         text.SetActive(false);
     }
+
+  
 }
