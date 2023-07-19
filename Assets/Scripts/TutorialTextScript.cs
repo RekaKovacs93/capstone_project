@@ -12,6 +12,8 @@ public class TutorialTextScript : MonoBehaviour
 
     [SerializeField] Portal portal;
 
+    //[SerializeField] PortalTrigger crystal;
+
     [SerializeField]
     private Collider2D textTrigger;
 
