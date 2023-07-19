@@ -23,9 +23,10 @@ public class PortalTrigger : MonoBehaviour
     {
     
 
-        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 50f && activated)
+        if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity > 100f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 70 && activated)
         {
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 5f * Time.deltaTime;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 5f * Time.deltaTime;
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 50f * Time.deltaTime;
         }
 
     }
@@ -39,7 +40,7 @@ public class PortalTrigger : MonoBehaviour
         if (collision.CompareTag("Player") && activated == false)
         {
             Debug.Log(player);
-            
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 150f;
             audio = GetComponent<AudioSource>();
             activated = true;
             portal.checkPortalTriggers();
