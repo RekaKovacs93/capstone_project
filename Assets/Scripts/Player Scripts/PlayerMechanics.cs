@@ -89,7 +89,7 @@ public class PlayerMechanics : MonoBehaviour
             
         }
 
-        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.39)
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.42)
         {
             StartCoroutine(Flicker());
         }
