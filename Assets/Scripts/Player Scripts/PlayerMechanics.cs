@@ -89,7 +89,7 @@ public class PlayerMechanics : MonoBehaviour
             
         }
 
-        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.4)
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.375)
         {
             StartCoroutine(Flicker());
         }
@@ -151,7 +151,7 @@ public class PlayerMechanics : MonoBehaviour
         Debug.Log("light before " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.138f;
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.3f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
         Debug.Log("I have reduced the light to "+lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
     }
 
