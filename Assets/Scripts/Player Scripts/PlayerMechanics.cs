@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class PlayerMechanics : MonoBehaviour
 {
@@ -41,6 +42,11 @@ public class PlayerMechanics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey("escape"))
+        {
+            SceneManager.LoadScene(0);
+        }
+
         pos = transform.position;
 
         if (Input.GetKey("w") && !LevelOver)
