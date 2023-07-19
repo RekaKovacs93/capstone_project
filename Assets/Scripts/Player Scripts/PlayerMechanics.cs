@@ -33,7 +33,7 @@ public class PlayerMechanics : MonoBehaviour
 
     private void Start()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 1f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius = 0.15f;
     }
@@ -100,11 +100,11 @@ public class PlayerMechanics : MonoBehaviour
     public void IncreaseLight()
     {
         Debug.Log("Before "+"Intensity "+ lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
-        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity <= 80) {
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 20f;
+        if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity <= 0.8) {
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 0.2f;
         } else
         {
-            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 100f;
+            lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 1f;
         }
         if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius <= 0.552)
         {
@@ -128,14 +128,14 @@ public class PlayerMechanics : MonoBehaviour
     {
         
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
 
     }
     public void DrainLight()
     {
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.12f * Time.deltaTime;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.0012f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.00828f * Time.deltaTime;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.0018f * Time.deltaTime;
     }
@@ -149,7 +149,7 @@ public class PlayerMechanics : MonoBehaviour
     public void CrystalReducePlayerLight()
     {
         Debug.Log("light before " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.2f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
         Debug.Log("I have reduced the light to "+lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity);

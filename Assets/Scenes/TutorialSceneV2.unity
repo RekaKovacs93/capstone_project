@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -246,7 +246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -23749,7 +23749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -23842,7 +23842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -25722,7 +25722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -26136,7 +26136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -26229,7 +26229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -26322,7 +26322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -26415,7 +26415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -27869,7 +27869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -28256,7 +28256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -28354,7 +28354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -28447,7 +28447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -28861,7 +28861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -29169,7 +29169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -29874,7 +29874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -30277,7 +30277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -30432,7 +30432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -30834,7 +30834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -30932,7 +30932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -31025,7 +31025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -31118,7 +31118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -31211,7 +31211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -88747,7 +88747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -88975,7 +88975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -89680,7 +89680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -90543,7 +90543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -91178,7 +91178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -91271,7 +91271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -91364,7 +91364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -91695,7 +91695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_Intensity
-      value: 373.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6856276079987429971, guid: d4a0f85782bbe46c9b427860dbdfe10c, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -92022,6 +92022,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996603309288126904, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
+      propertyPath: m_BlendStyleIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4961541873451463256, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
