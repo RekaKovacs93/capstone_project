@@ -128,7 +128,7 @@ public class PlayerMechanics : MonoBehaviour
     {
         
         GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
-        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 20f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 10f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
 
