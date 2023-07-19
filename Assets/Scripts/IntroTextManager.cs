@@ -195,17 +195,17 @@ public class IntroTextManager : MonoBehaviour
         if (timer > 60)
         {
             narrationText15.SetActive(false);
-            narrationText16.SetActive(true);
+            
             
         }
-        if (timer > 62)
+        if (timer > 61)
         {
-            narrationText16.SetActive(false);
+            narrationText16.SetActive(true);
             narrationText17.SetActive(true);
         }
         if (timer > 64)
         {
-            
+            narrationText16.SetActive(false);
         }
         if (timer > 64)
         {
