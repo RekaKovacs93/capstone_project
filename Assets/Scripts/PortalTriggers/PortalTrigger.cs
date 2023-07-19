@@ -26,7 +26,6 @@ public class PortalTrigger : MonoBehaviour
         if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity > 100f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 70 && activated)
         {
             GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 5f * Time.deltaTime;
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 50f * Time.deltaTime;
         }
 
     }
