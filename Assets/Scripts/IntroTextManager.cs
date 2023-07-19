@@ -7,7 +7,7 @@ public class IntroTextManager : MonoBehaviour
 {
 
     [SerializeField]
-    private float timer = 0;
+    public float timer = 0;
 
     [SerializeField]
     private GameObject narrationText1;
