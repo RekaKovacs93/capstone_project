@@ -11,11 +11,14 @@ public class Edible : MonoBehaviour
     [SerializeField]
     private PlayerMechanics playerMechanics;
 
+    private bool isEdible;
+
 
 
     private void Start()
     {
         this.gameObject.SetActive(true);
+        isEdible = true;
         audio = GetComponent<AudioSource>();
     }
 
@@ -24,12 +27,13 @@ public class Edible : MonoBehaviour
     {
         
 
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isEdible)
         {
             Debug.Log("I am colliding");
             this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             audio.Play();
             playerMechanics.IncreaseLight();
+            isEdible = false;
             Invoke("disableEdible", 3f);
        
             
