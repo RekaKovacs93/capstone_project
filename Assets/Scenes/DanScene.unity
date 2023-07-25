@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1412165775}
+  portal: {fileID: 0}
   textTrigger: {fileID: 46196162}
 --- !u!60 &46196162
 PolygonCollider2D:
@@ -436,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 622055842}
+  portal: {fileID: 0}
   textTrigger: {fileID: 161582170}
 --- !u!60 &161582170
 PolygonCollider2D:
@@ -2094,6 +2096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1505389940}
+  portal: {fileID: 0}
   textTrigger: {fileID: 243062468}
 --- !u!60 &243062468
 PolygonCollider2D:
@@ -5637,6 +5640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1224119106}
+  portal: {fileID: 0}
   textTrigger: {fileID: 929742907}
 --- !u!60 &929742907
 PolygonCollider2D:
@@ -6608,6 +6612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 814195573}
+  portal: {fileID: 0}
   textTrigger: {fileID: 1105836856}
 --- !u!60 &1105836856
 PolygonCollider2D:
@@ -27208,7 +27213,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 50
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000011d42e25bb5939bfd7c6386e15e26567ed580894e76f24e7ef3b638b017f1255
@@ -145115,6 +145120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1378289398}
+  portal: {fileID: 0}
   textTrigger: {fileID: 1747708525}
 --- !u!60 &1747708525
 PolygonCollider2D:
@@ -148451,6 +148457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 753200707}
+  portal: {fileID: 0}
   textTrigger: {fileID: 1951550571}
 --- !u!60 &1951550571
 PolygonCollider2D:
@@ -148600,6 +148607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1335520120}
+  portal: {fileID: 0}
   textTrigger: {fileID: 2038013129}
 --- !u!60 &2038013129
 PolygonCollider2D:
