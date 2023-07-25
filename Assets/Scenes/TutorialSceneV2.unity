@@ -24495,8 +24495,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: this looks like a portal, but it's inactive
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26235,8 +26235,8 @@ MonoBehaviour:
 
     press X to drop a fragment'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26915,8 +26915,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: you must find a way out...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27518,8 +27518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: move with
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -30931,8 +30931,8 @@ MonoBehaviour:
 
     perhaps if you touch it...?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35269,8 +35269,8 @@ MonoBehaviour:
 
     could it be the portal?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -89340,8 +89340,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: absorb these fragments or fade away
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -91641,8 +91641,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: your light is dying...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
+  m_sharedMaterial: {fileID: -1174096265330640824, guid: 54cc0eae1d73b444fad39fde65d3db6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
