@@ -7,7 +7,6 @@ public class PopLight : MonoBehaviour
 
     public new Collider2D collider2D;
 
-    [SerializeField]
     private PlayerMechanics playerMechanics;
 
     [SerializeField]
@@ -18,6 +17,7 @@ public class PopLight : MonoBehaviour
     private void Start()
     {
         this.gameObject.SetActive(true);
+        playerMechanics = FindObjectOfType<PlayerMechanics>();
 
     }
 
@@ -32,7 +32,7 @@ public class PopLight : MonoBehaviour
             audioSource.Play();
             this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             playerMechanics.IncreaseLight();
-            Invoke("Disappear", 1f);
+            Invoke("Disappear", 3f);
         }
     }
 
@@ -48,6 +48,11 @@ public class PopLight : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+
+    //public void setPlayerMechanics(PlayerMechanics playerMechanics)
+    //{
+    //    this.playerMechanics = playerMechanics;
+    //}
 
   
     
