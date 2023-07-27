@@ -6,6 +6,9 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     AudioSource audio;
+
+    Animator animator;
+
     public new Collider2D collider2D;
 
     private bool portalOpen = false;
@@ -16,6 +19,7 @@ public class Portal : MonoBehaviour
 
 
     [SerializeReference]  private List<PortalTrigger> triggers;
+
 
 
     private void Update()
@@ -62,6 +66,8 @@ public class Portal : MonoBehaviour
         if (check)
         {
             portalOpen = true;
+            animator = GetComponent<UnityEngine.Animator>();
+            animator.enabled = true;
             audio = GetComponent<AudioSource>();
             audio.Play();
             GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f;
