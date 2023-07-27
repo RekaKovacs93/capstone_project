@@ -22,23 +22,17 @@ public class Portal : MonoBehaviour
 
 
 
+
+
     private void Update()
     {
-        if(portalOpen && GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity < 100)
+        if(portalOpen)
         {
-            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 20f * Time.deltaTime;
-        }
-        //if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 1)
-        //{
-        //    GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius += 0.09f * Time.deltaTime;
-        //}
-        
+            GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = Mathf.PingPong(Time.time * 40f, 30f);
 
-        //if (GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle < 360f && GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius >= 1 && portalOpen)
-        //{
-        //    GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterAngle += 50f * Time.deltaTime;
-        //    GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerAngle += 50f * Time.deltaTime;
-        //}
+        }
+
+
 
     }
 
@@ -74,7 +68,6 @@ public class Portal : MonoBehaviour
             animator.enabled = true;
             audio = GetComponent<AudioSource>();
             audio.Play();
-            //GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity += 100f;
             Debug.Log("Portal now active");
         }
         
