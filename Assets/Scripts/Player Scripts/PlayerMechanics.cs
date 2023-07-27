@@ -46,24 +46,24 @@ public class PlayerMechanics : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-
+        
         pos = transform.position;
 
-        if (Input.GetKey("w") && !LevelOver)
+        if (Input.GetKey("w") && !LevelOver || Input.GetKey(KeyCode.UpArrow) && !LevelOver)
         {
             
             pos.y += speed * Time.deltaTime;
             countDown.moveDrain();
             DrainLight();
         }
-        if (Input.GetKey("s") && !LevelOver)
+        if (Input.GetKey("s") && !LevelOver || Input.GetKey(KeyCode.DownArrow) && !LevelOver)
         {
             
             pos.y -= speed * Time.deltaTime;
             countDown.moveDrain();
             DrainLight();
         }
-        if (Input.GetKey("d") && !LevelOver)
+        if (Input.GetKey("d") && !LevelOver || Input.GetKey(KeyCode.RightArrow) && !LevelOver)
         {
             
             pos.x += speed * Time.deltaTime;
@@ -71,7 +71,7 @@ public class PlayerMechanics : MonoBehaviour
             DrainLight();
 
         }
-        if (Input.GetKey("a") && !LevelOver)
+        if (Input.GetKey("a") && !LevelOver || Input.GetKey(KeyCode.LeftArrow) && !LevelOver)
         {
             
             pos.x -= speed * Time.deltaTime;
@@ -133,10 +133,11 @@ public class PlayerMechanics : MonoBehaviour
     public void DropPopLight()
     {
         
-        GameObject newPopLIght = Instantiate(popLightPrefab, pos, Quaternion.identity);
+        GameObject newPopLight = Instantiate(popLightPrefab, pos, Quaternion.identity);
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
+        
 
     }
     public void DrainLight()
