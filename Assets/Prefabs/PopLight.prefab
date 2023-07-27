@@ -155,7 +155,7 @@ Transform:
   m_Children:
   - {fileID: 2370024856785835462}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7743067585958562547
 SpriteRenderer:
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 1
   m_FalloffIntensity: 0.85
-  m_Color: {r: 0.972549, g: 0.37254903, b: 0.44343343, a: 1}
+  m_Color: {r: 0.3224012, g: 0.990566, b: 0.3548364, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -334,7 +334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider2D: {fileID: 6923709260704028243}
-  playerMechanics: {fileID: -370123399760682867, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
   audioSource: {fileID: -8027744237807677854}
 --- !u!82 &6131846559134962917
 AudioSource:

@@ -18,6 +18,7 @@ public class PopLight : MonoBehaviour
     {
         this.gameObject.SetActive(true);
         playerMechanics = FindObjectOfType<PlayerMechanics>();
+        Invoke("makeEdible", 3f);
 
     }
 
@@ -27,21 +28,17 @@ public class PopLight : MonoBehaviour
 
         if (collision.CompareTag("Player") && canBeEaten)
         {
-
-            //need to change this so that it affects radius
             audioSource.Play();
             this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             playerMechanics.IncreaseLight();
+            canBeEaten = false;
             Invoke("Disappear", 3f);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void makeEdible()
     {
-        if (collision.CompareTag("Player"))
-        {
-            canBeEaten = true;
-        }
+        canBeEaten = true;
     }
 
     private void Disappear()
@@ -49,13 +46,8 @@ public class PopLight : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    //public void setPlayerMechanics(PlayerMechanics playerMechanics)
-    //{
-    //    this.playerMechanics = playerMechanics;
-    //}
 
-  
-    
-        
+
+
 }
 

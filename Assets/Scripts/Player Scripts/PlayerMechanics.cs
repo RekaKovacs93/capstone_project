@@ -26,8 +26,10 @@ public class PlayerMechanics : MonoBehaviour
 
     private Queue<float> queue; // TODO: initialize
     private int smoothing = 5;
+    
+    private Color green = new Color(0.3224012f, 0.990566f, 0.3548364f);
 
- 
+
 
 
     // Start is called before the first frame update
@@ -89,10 +91,16 @@ public class PlayerMechanics : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown("x"))
+        if (Input.GetKeyDown("z"))
         {
-            DropPopLight();
+            DropGreenPopLight();
             
+        }
+
+        if (Input.GetKeyDown("c"))
+        {
+            DropRedPopLight();
+
         }
 
         if (lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius < 0.42)
@@ -130,14 +138,26 @@ public class PlayerMechanics : MonoBehaviour
         Debug.Log("After "+"Intensity " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity + "Outer " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius + "Inner " + lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius);
     }
 
-    public void DropPopLight()
+    public void DropGreenPopLight()
     {
         
         GameObject newPopLight = Instantiate(popLightPrefab, pos, Quaternion.identity);
+        newPopLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().color = green;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
         
+
+    }
+    public void DropRedPopLight()
+    {
+
+        GameObject newPopLight = Instantiate(popLightPrefab, pos, Quaternion.identity);
+        newPopLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().color = Color.red;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity -= 0.1f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius -= 0.0138f;
+        lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius -= 0.03f;
+
 
     }
     public void DrainLight()
