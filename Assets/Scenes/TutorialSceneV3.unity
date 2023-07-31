@@ -3608,11 +3608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.89
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.73
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 8736909463531280725, guid: 06d3f108bd1dd4ee38bc95b1857478d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68771,7 +68771,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000011d42e25bb5939bfd7c6386e15e26567ed580894e76f24e7ef3b638b017f1255
@@ -70553,8 +70553,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602148470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6918, y: 3.2419, z: 0}
-  m_LocalScale: {x: 1.6616895, y: 2.1868117, z: 4}
+  m_LocalPosition: {x: 8.4334, y: 3.0344, z: 0}
+  m_LocalScale: {x: 3.4251046, y: 3.6970415, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1980046491}
@@ -70573,7 +70573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 811887405}
-  portal: {fileID: 0}
   textTrigger: {fileID: 602148473}
 --- !u!60 &602148473
 PolygonCollider2D:
@@ -70619,9 +70618,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.00982032, y: 0.19776493}
+    - - {x: -0.00982032, y: 0.26565015}
       - {x: -0.5, y: 0}
-      - {x: -0.009820319, y: -0.18284053}
+      - {x: -0.0006608693, y: -0.26769698}
       - {x: 0.5, y: 0}
   m_UseDelaunayMesh: 0
 --- !u!212 &602148474
@@ -72546,7 +72545,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 265483997}
-  portal: {fileID: 0}
   textTrigger: {fileID: 861335475}
 --- !u!60 &861335475
 PolygonCollider2D:
@@ -73332,7 +73330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921133055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.89, y: 2.73, z: -10}
+  m_LocalPosition: {x: 5.47, y: 2.98, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -73471,7 +73469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1293462147}
-  portal: {fileID: 0}
   textTrigger: {fileID: 963266098}
 --- !u!60 &963266098
 PolygonCollider2D:
@@ -74956,7 +74953,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 151380407}
-  portal: {fileID: 0}
   textTrigger: {fileID: 1027933531}
 --- !u!60 &1027933531
 PolygonCollider2D:
@@ -75106,7 +75102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 447470796}
-  portal: {fileID: 0}
   textTrigger: {fileID: 1045511005}
 --- !u!60 &1045511005
 PolygonCollider2D:
