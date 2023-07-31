@@ -63,11 +63,10 @@ public class Portal : MonoBehaviour
 
         if (check)
         {
-            portalOpen = true;
-            animator = GetComponent<UnityEngine.Animator>();
-            animator.enabled = true;
+            
             audio = GetComponent<AudioSource>();
             audio.Play();
+            Invoke("activateVisuals", 1f);
             Debug.Log("Portal now active");
         }
         
@@ -77,6 +76,13 @@ public class Portal : MonoBehaviour
     public bool getPortalStatus()
     {
         return portalOpen;
+    }
+
+    public void activateVisuals()
+    {
+        portalOpen = true;
+        animator = GetComponent<UnityEngine.Animator>();
+        animator.enabled = true;
     }
 
 }
