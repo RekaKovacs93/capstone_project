@@ -27,7 +27,7 @@ public class TutorialTextScript : MonoBehaviour
     // Update is called once per frame
     //void Update()
     //{
-        
+
     //}
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,7 +39,7 @@ public class TutorialTextScript : MonoBehaviour
         else if (collision.CompareTag("Player") && !textTrigger.CompareTag("Trigger2"))
         {
             text.SetActive(true);
-        
+
         }
     }
 
