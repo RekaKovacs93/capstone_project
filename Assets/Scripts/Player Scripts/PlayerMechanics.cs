@@ -29,6 +29,8 @@ public class PlayerMechanics : MonoBehaviour
     
     private Color green = new Color(0.3224012f, 0.990566f, 0.3548364f);
 
+    private bool hasMagicEdible;
+
 
 
 
@@ -189,4 +191,9 @@ public class PlayerMechanics : MonoBehaviour
             yield return new WaitForSeconds(randomTime);
     }
 
+    public void pickUpMagicEdible()
+    {
+        hasMagicEdible = true;
+        Debug.Log("I'm pregnant!");
+    }
 }

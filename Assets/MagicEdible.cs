@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Edible : MonoBehaviour
+public class MagicEdible : MonoBehaviour
 {
     new AudioSource audio;
 
@@ -25,23 +25,21 @@ public class Edible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
 
         if (collision.CompareTag("Player") && isEdible)
         {
             this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0;
             audio.Play();
-            playerMechanics.IncreaseLight();
+            playerMechanics.pickUpMagicEdible();
             isEdible = false;
             Invoke("disableEdible", 3f);
-       
-            
+
+
         }
     }
-    private void disableEdible() {
+    private void disableEdible()
+    {
         this.gameObject.SetActive(false);
-
-}
-    
-
+    }
 }
