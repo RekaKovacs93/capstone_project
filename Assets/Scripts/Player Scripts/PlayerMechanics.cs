@@ -17,6 +17,12 @@ public class PlayerMechanics : MonoBehaviour
     [SerializeField]
     private GameEngine gameEngine;
 
+    [SerializeField]
+    private GameObject globalLight;
+
+    [SerializeField]
+    private GameObject playerBaby;
+
     private bool LevelOver = false;
 
     [SerializeField] private GameObject popLightPrefab;
@@ -31,6 +37,8 @@ public class PlayerMechanics : MonoBehaviour
 
     private bool hasMagicEdible;
 
+   
+
 
 
 
@@ -41,6 +49,7 @@ public class PlayerMechanics : MonoBehaviour
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 1f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightOuterRadius = 0.69f;
         lightBoy.GetComponent<UnityEngine.Rendering.Universal.Light2D>().pointLightInnerRadius = 0.15f;
+        playerBaby.SetActive(false);
     }
 
     // Update is called once per frame
@@ -102,6 +111,15 @@ public class PlayerMechanics : MonoBehaviour
         if (Input.GetKeyDown("c"))
         {
             DropRedPopLight();
+
+        }
+
+        if (Input.GetKeyDown("x") && hasMagicEdible)
+        {
+            globalLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 20f;
+            Invoke("turnGlobalLightOff", 1f);
+            hasMagicEdible = false;
+            playerBaby.SetActive(false);
 
         }
 
@@ -195,5 +213,11 @@ public class PlayerMechanics : MonoBehaviour
     {
         hasMagicEdible = true;
         Debug.Log("I'm pregnant!");
+        playerBaby.SetActive(true);
+    }
+
+    public void turnGlobalLightOff()
+    {
+        globalLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0f;
     }
 }

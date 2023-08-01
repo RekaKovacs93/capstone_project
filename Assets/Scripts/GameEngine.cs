@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,11 @@ public class GameEngine : MonoBehaviour
     public void ActivateWinScreen()
     {
         winScreen.SetActive(true);
+    }
+
+    internal void SetActive(bool v)
+    {
+        throw new NotImplementedException();
     }
 
     // Update is called once per frame
