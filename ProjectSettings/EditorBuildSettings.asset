@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroNarration.unity
     guid: 17cd315ae343c4ce087c81b07e70fd54
   - enabled: 0
-    path: Assets/Scenes/Tutorial Scene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
     path: Assets/Scenes/DanScene.unity
     guid: 4f04784b2912540128fa9c3ac6b7c50c
   - enabled: 0
