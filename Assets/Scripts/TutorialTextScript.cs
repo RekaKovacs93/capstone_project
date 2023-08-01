@@ -25,6 +25,7 @@ public class TutorialTextScript : MonoBehaviour
     {
         text.SetActive(false);
         textAppeared = false;
+        Debug.Log("Let's get started");
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class TutorialTextScript : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !textAppeared)
         {
+            Debug.Log("Yep, I'm feeling triggered");
             text.SetActive(true);
             
         }
@@ -50,9 +52,12 @@ public class TutorialTextScript : MonoBehaviour
 
 
     private void OnTriggerExit2D(Collider2D collision)
-    {
-        text.SetActive(false);
-        textAppeared = true;
+    {      
+        if (collision.CompareTag("Player")){
+            text.SetActive(false);
+            textAppeared = true;
+        }
+       
     }
 
   
